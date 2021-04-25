@@ -15,7 +15,10 @@ client.on('message', message => {
 		message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
 	} else if (message.content === `${prefix}userinfo`) {
 		message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
+	} else if (message.content === `${prefix}test`) {
+		message.channel.send('Ben is dumb');
 	}
+
 });
 
 client.login(token);
